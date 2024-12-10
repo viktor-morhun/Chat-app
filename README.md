@@ -4,7 +4,7 @@ This is a chat application built using **React** for the front-end, **Express.js
 
 ## Deployed Website
 
-You can access the live version of the application here: [Chat App Link](<insert-your-deployed-link-here>)
+You can access the live version of the application here: [Chat App Link](https://chat-app-reenbit.vercel.app/)
 
 ## Features
 
