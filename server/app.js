@@ -6,10 +6,7 @@ const messageRoutes = require("./routes/messageRoutes");
 const app = express();
 
 const corsOptions = {
-  origin: "https://chat-app-reenbit.vercel.app",
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-  credentials: true,
-};
+  origin: "*"};
 app.use(cors(corsOptions));
 app.use(express.json());
 
