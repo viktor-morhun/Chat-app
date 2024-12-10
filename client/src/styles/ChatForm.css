@@ -1,0 +1,106 @@
+.chat-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.chat-form__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.chat-form__content {
+  background-color: #17212B;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 400px;
+  max-width: 90%;
+  color: #EBEBEB;
+}
+
+.chat-form__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.chat-form__field {
+  margin-bottom: 15px;
+}
+
+.chat-form__field:has(.chat-form__input:focus) .chat-form__label{
+  color: #6396CB;
+}
+
+.chat-form__label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+}
+
+.chat-form__input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: transparent;
+  color: #EBEBEB;
+  outline: none;
+  border-bottom: 1px solid #313C49;
+}
+
+.chat-form__input:focus {
+  box-shadow: 0px 0px 1px 2px #6396CB;
+}
+
+.chat-form__error {
+  color: rgb(125, 169, 211);
+  font-size: 12px;
+  margin-bottom: 15px;
+}
+
+.chat-form__actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.chat-form__submit-button,
+.chat-form__cancel-button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  background-color: transparent;
+  font-weight: 600;
+  color: #6396CB;
+  transition: all 0.2s;
+}
+
+
+.chat-form__submit-button:hover,
+.chat-form__cancel-button:hover {
+  background-color: #1D2A39;
+}
+.chat-form__submit-button--delete {
+  color: #EC3942;
+}
+.chat-form__submit-button--delete:hover {
+  background-color: #31242A;
+  }

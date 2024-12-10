@@ -1,0 +1,119 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 800px;
+  background-color: #1f2b3a;
+  color: #fff;
+}
+
+.chat-window--empty {
+  background-color: #0e1621;
+  justify-content: center;
+  align-items: center;
+}
+
+.chat-window__placeholder {
+  background-color: #1f2b3a;
+  font-size: 18px;
+  padding: 8px 20px;
+  border-radius: 16px;
+}
+.chat-window__header {
+  padding: 12px;
+  display: flex;
+  background-color: #17212B;
+  border-left: 1px solid #101921;
+}
+
+.chat-window__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 4px 0 0 18px;
+}
+
+
+.chat-window__messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: #0e1621;
+  border: 1px solid #0A121B;
+}
+
+.chat-window__message {
+  max-width: 65%;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.chat-window__message--bot {
+  background-color: #182533;
+  align-self: flex-start;
+}
+
+.chat-window__message--user {
+  background-color: #2b5278;
+  align-self: flex-end;
+}
+
+.chat-window__message p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.chat-window__date {
+  font-size: 12px;
+  color: rgb(182, 188, 192);
+  justify-self: right;
+}
+
+.chat-window__input {
+  display: flex;
+  padding: 10px;
+  border-left: 1px solid #101921  ;
+  background-color: #17212b;
+}
+
+.chat-window__input-field {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  background-color: #17212b;
+  color: #fff;
+  outline: none;
+}
+
+.chat-window__send-button {
+  margin-left: 10px;
+  background: transparent;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chat-window__send-button:hover {
+  background-color: #2c4b69;
+}
+
+.chat-window__messages::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-window__messages::-webkit-scrollbar-thumb {
+  background-color: #4F555C; 
+  border-radius: 4px; 
+}
+
+.chat-window__messages::-webkit-scrollbar-track {
+  background-color: #242A33; 
+}

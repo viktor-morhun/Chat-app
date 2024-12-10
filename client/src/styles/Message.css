@@ -1,0 +1,18 @@
+.chat-form__input--edit {
+  resize: none;
+  height: 100px;
+  font-family: inherit;
+}
+
+.chat-form__input--edit::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-form__input--edit::-webkit-scrollbar-thumb {
+  background-color: #4F555C; 
+  border-radius: 4px; 
+}
+
+.chat-form__input--edit::-webkit-scrollbar-track {
+  background-color: #242A33; 
+}
